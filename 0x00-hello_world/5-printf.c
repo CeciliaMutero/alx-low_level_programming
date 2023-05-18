@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *using printf for c programming
- *main - entry point
- *Return: Always 0 (Success)
-*/
+ * main - entry point
+ * my second code in c
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
