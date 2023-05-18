@@ -1,13 +1,13 @@
 #include <stdio.h>
-/*
+/**
 *my first code
 *main : entry point
 *Return = Always 0 (Success)
-**/
+*/
 
-int main(void)
+int main()
 
 {
-	puts("Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
