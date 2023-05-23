@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
  * main - entry point
- *  all possible different combinations of two digits.
- *  Return: Always 0 (success)
+ * all possible different combinations of two digits
+ * Return: Always 0 (Success)
  */
 
 int main(void)
+
 {
 	int i;
 	int j;
@@ -17,11 +18,11 @@ int main(void)
 		putchar('0' + j);
 	{
 	if (i != 8 || j != 9)
-		putchar(',');
+		putchar (',');
 		putchar(' ');
+
 	}
 	}
 		putchar('\n');
 		return (0);
 }
-
