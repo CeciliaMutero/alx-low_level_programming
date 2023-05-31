@@ -3,6 +3,7 @@
 /**
  * rev_string - reverses a string
  * @*s: pointer to a string
+ *@s: string
  * Return: Always 0 (Success)
  */
 
@@ -10,13 +11,20 @@ void rev_string(char *s)
 
 {
 
-	int length = strlen(s);
+	int length, z, half;
+	char temp;
 
-	for (int i = 0; i < length / 2; i++)
+
+	for (length = 0; s[length] != '\0'; length++)
+	;
+	z = 0;
+	half = length / 2;
+
+	while (half--)
 	{
-		char temp = s[i];
-
-		s[i] = s[length - 1 - i];
-		s[length - 1 - i] = temp;
+		temp = s[length - z - 1];
+		s[length - z - 1] = s[z];
+		s[z] = temp;
+		z++;
 	}
 }
