@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (success)
  */
-int main(int argc,char*argv[])
+int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
@@ -15,24 +15,26 @@ int main(int argc,char*argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit (i);
+		exit(i);
 	}
 	bytes = atoi(argv[1]);
 
 	if (bytes < 0)
 	{
 		printf("Error\n");
-		exit (2);
+		exit(2);
 	}
 
 	arr = (char *)main;
 
-	for (i =0; i < bytes; i++)
+	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		return (0);
+		printf("%2hhx ", arr[i]);
+	}
+	return (0);
 	}
