@@ -35,7 +35,7 @@ int sqrt_recursive(int n, int start, int end)
  * natural square root of a number
  * @n: number to find square root
  *
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int _sqrt_recursion(int n)
 {
