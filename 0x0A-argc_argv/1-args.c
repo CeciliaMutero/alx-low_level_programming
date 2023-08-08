@@ -1,6 +1,14 @@
 #include <stdio.h>
-
+/**
+ * main - main
+ * @argc: number of command line arguments
+ * @argv: command line arguments
+ *
+ * Return: Always 0 (success)
+ */
 int main(int argc, char *argv[])
 {
-	printf("s\n", argv[0]);
+	(void)argv;
+	printf("%d\n", argc);
+	return (0);
 }
