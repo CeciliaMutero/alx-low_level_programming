@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 	int y = atoi(argv[2]);
 	int mul = x * y;
 
-	if (argc == 3)
+	if (argc == 1)
 	{
-		printf("%d\n", mul);
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
-	printf("Error\n");
-	return (1);
+	printf("%d\n", mul);
+	return (0);
 }
