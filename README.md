@@ -1,2 +1,1 @@
-# alx-low_level_programming
-Hello, World
+0x0D. C - Preprocessor
