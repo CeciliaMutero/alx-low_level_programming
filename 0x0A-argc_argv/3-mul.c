@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int mult = atoi(argv[1]) * atoi(argv[2]);
 
-	if (argc != 3)
+	if (argc == 1)
 	{
 		printf("Error\n");
 		return (1);
