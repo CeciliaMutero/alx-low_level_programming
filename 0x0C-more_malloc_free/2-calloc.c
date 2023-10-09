@@ -10,7 +10,6 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	size_t total_size;
 	void *ptr;
 
 	if (nmemb == 0 || size == 0)
@@ -18,8 +17,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	total_size = (size_t)nmemb * size;
-
-	ptr = calloc(nmemb, total_size);
+	ptr = calloc(nmemb, size);
 	return (ptr);
 }
