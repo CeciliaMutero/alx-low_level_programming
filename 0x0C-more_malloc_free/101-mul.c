@@ -10,15 +10,15 @@
  */
 int is_valid_number(const char *str)
 {
-        while (*str)
-        {
-                if (*str < '0' || *str > '9')
-        {
-                return (0);
-        }
-        str++;
-        }
-        return (1);
+	while (*str)
+	{
+		if (*str < '0' || *str > '9')
+		{
+			return (0);
+		}
+		str++;
+	}
+	return (1);
 }
 /**
  * multiply - multiplies two numbers
@@ -29,10 +29,10 @@ int is_valid_number(const char *str)
  */
 int multiply(const char *num1, const char *num2)
 {
-        int n1 = atoi(num1);
-        int n2 = atoi(num2);
+	int n1 = atoi(num1);
+	int n2 = atoi(num2);
 
-        return (n1 * n2);
+	return (n1 * n2);
 }
 /**
  * main - main
@@ -43,21 +43,20 @@ int multiply(const char *num1, const char *num2)
  */
 int main(int argc, char *argv[])
 {
-        int result;
+	int result;
 
-        if (argc != 3 || !is_valid_number(argv[1]) || !is_valid_number(argv[2]))
-        {
-        const char *error_message = "Error\n";
+	if (argc != 3 || !is_valid_number(argv[1]) || !is_valid_number(argv[2]))
+	{
+		const char *error_message = "Error\n";
 
-        while (*error_message)
-        {
-        _putchar(*error_message);
-        error_message++;
-        }
-        return (98);
-        }
-result = multiply(argv[1], argv[2]);
-        printf("%d\n", result);
-
-        return (0);
+		while (*error_message)
+		{
+			_putchar(*error_message);
+			error_message++;
+		}
+		return (98);
+	}
+	result = multiply(argv[1], argv[2]);
+	printf("%d\n", result);
+	return (0);
 }
